@@ -1,0 +1,93 @@
+@keyframes Jsebas{
+    0%{left:0}
+    30%{left:20%}
+    40%{left:50%}
+    50%{left:70%}
+    100%{left:0}
+}
+body{
+    background-color: lightblue;
+}
+h1{
+    animation:Jsebas 2 alternate 10s;
+    color:darkblue;
+    position:relative;
+    font-family:cursive;
+}
+.Contenedor{
+    border:solid;
+    align-items:center;
+    height: 450px;
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 10px;
+}
+.Contenedor div{
+    border:solid;
+    height: 200px;
+    width: 200px;
+    font-family:cursive;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;;
+}
+.parte1{
+    background-color: yellow;
+    justify-self:flex-start;
+}
+.parte2{
+    background-color: red;
+    justify-self: center;
+}
+.parte3{
+    background-color: blue;
+    justify-self: flex-end;
+}
+@media print{
+    .parte3, .parte1{
+        display:none;
+    }
+
+    .Contenedor div{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:700px){
+    button{
+        display:none;
+    }
+    .Contenedor{
+        flex-direction:column;
+    }
+    .Contenedor div{
+        width:100%;
+    }
+    .parte3{
+        order:2;
+    }
+    .parte2{
+        order:3;
+    }
+
+    @keyframes Sebas{
+        0%{
+            background:lightblue;
+        }
+        50%{
+            background:darkblue;
+            color:white;
+        }
+        100%{
+            background:lightblue;
+            color:#000;
+        }
+    }
+    body{
+        animation:Sebas 1s 
+    }
+    h1{
+        color:white;
+    }
+}
