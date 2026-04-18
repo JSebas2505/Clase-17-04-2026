@@ -39,6 +39,8 @@ h1{
     width: 300px;
 }
 .parte2{
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: red;
     justify-self: center;
     height: 125px;
@@ -70,15 +72,21 @@ h1{
         flex-direction:column;
     }
     .Contenedor div{
-        width:100%;
+        width:95%;
+        align-self: center;
     }
     .parte3{
         order:2;
     }
     .parte2{
         order:3;
+        margin-left: 5px;
+        margin-right: 5px;
     }
-
+    .parte1{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     @keyframes Sebas{
         0%{
             background:lightblue;
